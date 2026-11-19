@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Memoria</title>
-    <link rel="stylesheet" href="jogo.css">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="jogo">
-        <h1>Jogo de Memoria</h1>
+        <h1>Jogo da Memória</h1>
 
-        <section class="placar">
-           <div class="jogador ativo" id="placar-1">
-            <span class="nome">Jogador 1</span>
-            <span class="pontos" id="pontos-1">0</span>
+        <section class="placar" aria-label="Placar da partida">
+            <div class="jogador ativo" id="placar-1">
+                <span class="nome">Jogador 1</span>
+                <span class="pontos" id="pontos-1">0</span>
             </div>
+
             <div class="jogador" id="placar-2">
-            <span class="nome">Jogador 2</span>
-            <span class="pontos" id="pontos-2">0</span>
+                <span class="nome">Jogador 2</span>
+                <span class="pontos" id="pontos-2">0</span>
             </div>
         </section>
-        <p class="mensagem" id="mensagem-vez">Vez de jogador</p>
+
+        <p class="mensagem" id="mensagem-vez">Vez do Jogador 1</p>
+        <section class="tabuleiro" id="tabuleiro" aria-label="Tabuleiro do jogo"></section>
+
         <section class="resultado escondido" id="resultado">
             <p id="texto-resultado"></p>
-            <button id="btn-reiniciar">Jogar Novamente</button>
+            <button id="btn-reiniciar" type="button">Jogar novamente</button>
         </section>
-     </main>
-     <script src="jogo.js"></script>
-    
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
